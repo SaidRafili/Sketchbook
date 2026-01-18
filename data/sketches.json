@@ -1,1 +1,292 @@
-
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Untitled I",
+      "description": "Oil study focusing on warm contrasts and surface tension.",
+      "date": "11.01.2021",
+      "technique": "Oil painting",
+      "colors": ["Red", "Yellow", "Green"]
+    },
+    {
+      "id": 2,
+      "title": "Untitled II",
+      "description": "Exploration of motion through layered brushwork.",
+      "date": "18.01.2021",
+      "technique": "Oil painting",
+      "colors": ["Blue", "Violet"]
+    },
+    {
+      "id": 3,
+      "title": "Untitled III",
+      "description": "Reduced palette, emphasis on form over detail.",
+      "date": "02.02.2021",
+      "technique": "Oil painting",
+      "colors": ["Black", "White"]
+    },
+    {
+      "id": 4,
+      "title": "Untitled IV",
+      "description": "Exploration of motion through layered brushwork.",
+      "date": "18.01.2021",
+      "technique": "Oil painting",
+      "colors": ["Blue", "Violet"]
+    },
+    {
+      "id": 5,
+      "title": "Untitled V",
+      "description": "Study of negative space and simplified forms.",
+      "date": "08.02.2021",
+      "technique": "Pencil sketch",
+      "colors": ["Gray"]
+    },
+    {
+      "id": 6,
+      "title": "Untitled VI",
+      "description": "Quick gesture series focused on rhythm.",
+      "date": "20.02.2021",
+      "technique": "Ink",
+      "colors": ["Black"]
+    },
+    {
+      "id": 7,
+      "title": "Untitled VII",
+      "description": "Soft washes and atmospheric layering.",
+      "date": "05.03.2021",
+      "technique": "Watercolor",
+      "colors": ["Blue", "Green"]
+    },
+    {
+      "id": 8,
+      "title": "Untitled VIII",
+      "description": "High contrast charcoal figure study.",
+      "date": "22.03.2021",
+      "technique": "Charcoal",
+      "colors": ["Black", "White"]
+    },
+    {
+      "id": 9,
+      "title": "Untitled IX",
+      "description": "Collage elements with found paper and paint.",
+      "date": "10.04.2021",
+      "technique": "Mixed media",
+      "colors": ["Brown", "Beige"]
+    },
+    {
+      "id": 10,
+      "title": "Untitled X",
+      "description": "Small oil study on chromatic harmony.",
+      "date": "28.04.2021",
+      "technique": "Oil painting",
+      "colors": ["Red", "Orange"]
+    },
+    {
+      "id": 11,
+      "title": "Untitled XI",
+      "description": "Line exploration emphasizing contour.",
+      "date": "12.05.2021",
+      "technique": "Ink",
+      "colors": ["Black"]
+    },
+    {
+      "id": 12,
+      "title": "Untitled XII",
+      "description": "Experiment in glazing and translucency.",
+      "date": "30.05.2021",
+      "technique": "Oil painting",
+      "colors": ["Blue", "White"]
+    },
+    {
+      "id": 13,
+      "title": "Untitled XIII",
+      "description": "Rapid digital sketching exercise.",
+      "date": "14.06.2021",
+      "technique": "Digital",
+      "colors": ["Cyan", "Magenta"]
+    },
+    {
+      "id": 14,
+      "title": "Untitled XIV",
+      "description": "Study of texture using palette knife.",
+      "date": "01.07.2021",
+      "technique": "Oil painting",
+      "colors": ["Gray", "White"]
+    },
+    {
+      "id": 15,
+      "title": "Untitled XV",
+      "description": "Monochrome exploration of form and shadow.",
+      "date": "18.07.2021",
+      "technique": "Charcoal",
+      "colors": ["Black"]
+    },
+    {
+      "id": 16,
+      "title": "Untitled XVI",
+      "description": "Layered watercolor with wet-on-wet passages.",
+      "date": "05.08.2021",
+      "technique": "Watercolor",
+      "colors": ["Blue", "Yellow"]
+    },
+    {
+      "id": 17,
+      "title": "Untitled XVII",
+      "description": "Small scale gouache study of light.",
+      "date": "23.08.2021",
+      "technique": "Gouache",
+      "colors": ["White", "Violet"]
+    },
+    {
+      "id": 18,
+      "title": "Untitled XVIII",
+      "description": "Sgraffito and surface scraping experiments.",
+      "date": "09.09.2021",
+      "technique": "Mixed media",
+      "colors": ["Ochre", "Burnt Sienna"]
+    },
+    {
+      "id": 19,
+      "title": "Untitled XIX",
+      "description": "Expressive brushwork with limited palette.",
+      "date": "26.09.2021",
+      "technique": "Acrylic",
+      "colors": ["Red", "Black"]
+    },
+    {
+      "id": 20,
+      "title": "Untitled XX",
+      "description": "Negative painting technique study.",
+      "date": "13.10.2021",
+      "technique": "Watercolor",
+      "colors": ["Green", "Blue"]
+    },
+    {
+      "id": 21,
+      "title": "Untitled XXI",
+      "description": "Incorporation of metallic leaf and pigment.",
+      "date": "31.10.2021",
+      "technique": "Mixed media",
+      "colors": ["Gold", "Black"]
+    },
+    {
+      "id": 22,
+      "title": "Untitled XXII",
+      "description": "Study of soft edges and lost contours.",
+      "date": "17.11.2021",
+      "technique": "Oil painting",
+      "colors": ["Brown", "Blue"]
+    },
+    {
+      "id": 23,
+      "title": "Untitled XXIII",
+      "description": "Plein air color note with quick passage marks.",
+      "date": "04.12.2021",
+      "technique": "Acrylic",
+      "colors": ["Green", "Yellow"]
+    },
+    {
+      "id": 24,
+      "title": "Untitled XXIV",
+      "description": "High key study focusing on pale values.",
+      "date": "21.12.2021",
+      "technique": "Gouache",
+      "colors": ["White", "Yellow"]
+    },
+    {
+      "id": 25,
+      "title": "Untitled XXV",
+      "description": "Ink wash combined with drypoint marks.",
+      "date": "08.01.2022",
+      "technique": "Ink",
+      "colors": ["Black", "Gray"]
+    },
+    {
+      "id": 26,
+      "title": "Untitled XXVI",
+      "description": "Digital collage exploring scale and crop.",
+      "date": "25.01.2022",
+      "technique": "Digital",
+      "colors": ["Magenta", "Cyan"]
+    },
+    {
+      "id": 27,
+      "title": "Untitled XXVII",
+      "description": "Textural experiment with impasto layers.",
+      "date": "11.02.2022",
+      "technique": "Oil painting",
+      "colors": ["Blue", "White"]
+    },
+    {
+      "id": 28,
+      "title": "Untitled XXVIII",
+      "description": "Minimal line study with rhythmic repetition.",
+      "date": "28.02.2022",
+      "technique": "Pencil sketch",
+      "colors": ["Gray"]
+    },
+    {
+      "id": 29,
+      "title": "Untitled XXIX",
+      "description": "Monoprint textures emphasizing mark making.",
+      "date": "17.03.2022",
+      "technique": "Printmaking",
+      "colors": ["Black", "Blue"]
+    },
+    {
+      "id": 30,
+      "title": "Untitled XXX",
+      "description": "Loose watercolor notes on edge control.",
+      "date": "02.04.2022",
+      "technique": "Watercolor",
+      "colors": ["Green", "Brown"]
+    },
+    {
+      "id": 31,
+      "title": "Untitled XXXI",
+      "description": "Charcoal and pastel combination for warmth.",
+      "date": "19.04.2022",
+      "technique": "Charcoal",
+      "colors": ["Black", "Ochre"]
+    },
+    {
+      "id": 32,
+      "title": "Untitled XXXII",
+      "description": "Small oil sketch capturing changing light.",
+      "date": "06.05.2022",
+      "technique": "Oil painting",
+      "colors": ["Yellow", "Blue"]
+    },
+    {
+      "id": 33,
+      "title": "Untitled XXXIII",
+      "description": "Exploration of pattern and repetition.",
+      "date": "24.05.2022",
+      "technique": "Acrylic",
+      "colors": ["Pink", "White"]
+    },
+    {
+      "id": 34,
+      "title": "Untitled XXXIV",
+      "description": "Minimal composition with a restrained palette.",
+      "date": "11.06.2022",
+      "technique": "Gouache",
+      "colors": ["Blue", "Gray"]
+    },
+    {
+      "id": 35,
+      "title": "Untitled XXXV",
+      "description": "Surface experiments using wax resist.",
+      "date": "29.06.2022",
+      "technique": "Mixed media",
+      "colors": ["White", "Green"]
+    },
+    {
+      "id": 36,
+      "title": "Untitled XXXVI",
+      "description": "Loose exploration of light and edge.",
+      "date": "12.12.2022",
+      "technique": "Mixed media",
+      "colors": ["Gold", "Black"]
+    }
+  ]
+}
