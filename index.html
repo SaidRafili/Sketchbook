@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sketchbook</title>
+</head>
+<body>
+    <div class="general">
+        <h1>Tanya's Works</h1>
+        <div class="skt-container">
+            <div class="skt-slide">
+                <div class="skt-left">
+                    <button id="" class="skt-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="sketches">
+                </div>
+                <div class="skt-right">
+                    <button id="next" class="skt-button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="skt-info">
+                <h2>About</h2>
+                    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <p><b>Date:</b> <i id="value">11.01.2021</i></p>
+                    <p><b>Technique:</b> <i id="value">Oil painting</i></p>
+                    <p><b>Colour(s):</b> Red, Yellow, Green, Blue, Violet</p>
+            </div>
+        </div>
+    </div>
+<script>
+const slider = document.querySelector('.sketches');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.querySelector('.skt-left button');
+
+const titleEl = document.querySelector('.skt-info h2');
+const descEl = document.getElementById('description');
+const dateEl = document.querySelector('.skt-info i#value');
+const techniqueEl = document.querySelectorAll('.skt-info i#value')[1];
+const colorsEl = document.querySelector('.skt-info p:last-child');
+
+let items = [];
+let index = 0;
+
+/* load data */
+fetch('/data/sketches.json')
+  .then(res => res.json())
+  .then(data => {
+    items = data.items;
+    buildSlides(items);
+    update();
+  });
+
+function buildSlides(data) {
+  slider.innerHTML = '';
+
+  data.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'a';
+
+    const img = document.createElement('img');
+    img.src = `/img/${item.id}.jpg`;
+    img.alt = item.title || '';
+    img.className = 'artwork';
+
+    const signature = document.createElement('img');
+    signature.src = '/signature.png';
+    signature.alt = 'Signature';
+    signature.className = 'signature';
+
+    div.appendChild(img);
+    div.appendChild(signature);
+    slider.appendChild(div);
+  });
+}
+
+function update() {
+  const slides = [...slider.children];
+
+  slides.forEach(el =>
+    el.classList.remove('prev', 'current', 'next')
+  );
+
+  const prev = (index - 1 + slides.length) % slides.length;
+  const next = (index + 1) % slides.length;
+
+  slides[prev].classList.add('prev');
+  slides[index].classList.add('current');
+  slides[next].classList.add('next');
+
+  updateInfo(items[index]);
+}
+
+function updateInfo(item) {
+  titleEl.textContent = item.title || 'Untitled';
+  descEl.textContent = item.description || '';
+  dateEl.textContent = item.date || '';
+  techniqueEl.textContent = item.technique || '';
+  colorsEl.innerHTML = `<b>Colour(s):</b> ${item.colors.join(', ')}`;
+}
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % items.length;
+  update();
+});
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + items.length) % items.length;
+  update();
+});
+</script>
+
+</body>
+</html>
